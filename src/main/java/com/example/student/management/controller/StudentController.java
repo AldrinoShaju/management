@@ -13,16 +13,10 @@ import java.util.List;
 @RequestMapping("/api")
 public class StudentController {
 
-//    @Autowired
     private StudentDto studentDto;
 
     @Autowired
     private StudentService studentService;
-
-//    @GetMapping("/error")
-//    public String testing(){
-//        return "HELLO WORLD";
-//    }
 
     @GetMapping(path = "/getAllStudents")
     public List<Student> getAllStudents(){
